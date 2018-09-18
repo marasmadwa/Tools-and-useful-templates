@@ -4,7 +4,7 @@ For my own usage
 
 HTML:
 
-```
+```HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +28,7 @@ HTML:
 ```
 CSS:
 
-```
+```CSS
 .main-window-slide-container{
   width: 100px;
   height: 100px;
@@ -55,7 +55,7 @@ CSS:
 ```
 JS:
 
-```
+```JavaScript
 /* var mainWindowSlide = document.querySelector(".main-window-slide-container");
 var slideDiv = mainWindowSlide.firstElementChild;
 
