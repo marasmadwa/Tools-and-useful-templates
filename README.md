@@ -3,7 +3,9 @@ For my own usage
 
 
 HTML:
-`<!DOCTYPE html>
+
+`
+<!DOCTYPE html>
 <html>
 <head>
 <title>Page Title</title>
@@ -25,7 +27,9 @@ HTML:
   <p class="para">Some text</p>
 `
 CSS:
-`.main-window-slide-container{
+
+`
+.main-window-slide-container{
   width: 100px;
   height: 100px;
   background: black;
@@ -50,7 +54,9 @@ CSS:
 }
 `
 JS:
-`/* var mainWindowSlide = document.querySelector(".main-window-slide-container");
+
+`
+/* var mainWindowSlide = document.querySelector(".main-window-slide-container");
 var slideDiv = mainWindowSlide.firstElementChild;
 
 slideDiv.style.backgroundImage = "url('http://bdfjade.com/data/out/102/6066356-wallpaper-image.jpeg')"
