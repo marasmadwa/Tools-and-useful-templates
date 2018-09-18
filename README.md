@@ -55,7 +55,7 @@ CSS:
 ```
 JS:
 
-`
+```
 /* var mainWindowSlide = document.querySelector(".main-window-slide-container");
 var slideDiv = mainWindowSlide.firstElementChild;
 
