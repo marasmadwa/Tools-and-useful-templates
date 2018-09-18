@@ -114,6 +114,23 @@ var oldText = document.querySelector(".para");
 var newText = document.createTextNode("New Text");
 oldText.innerHTML="";
 oldText.appendChild(newText);
+
+//Umieszczanie zewnętrznego pliku tekstowego (lokalnie)
+
+var xmlRequest =new XMLHttpRequest();
+xmlRequest.open("GET","https://12Me21.github.io/test.txt");
+xmlRequest.onload=function(){
+      var slideLayer = document.querySelector(".slide-layer");
+      var sixthDiv = slideLayer.children[6];
+      sixthDiv.innerHTML = "";
+      sixthDiv.innerHTML = xmlRequest.responseText;
+      sixthDiv.style.color="black";
+      sixthDiv.style.textAlign="center";
+      sixthDiv.style.fontSize="40px";
+      sixthDiv.style.lineHeigt="101px";
+}
+xmlRequest.send();
+
 ```
 Just couple of code snippet. Nothing special :)
 
