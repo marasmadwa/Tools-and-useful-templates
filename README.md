@@ -4,7 +4,7 @@ For my own usage
 
 HTML:
 
-`
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,10 +25,10 @@ HTML:
     <div>6</div>
   </div>
   <p class="para">Some text</p>
-`
+```
 CSS:
 
-`
+```
 .main-window-slide-container{
   width: 100px;
   height: 100px;
@@ -52,7 +52,7 @@ CSS:
   flex-direction: column;
   align-items: center;
 }
-`
+```
 JS:
 
 `
@@ -114,7 +114,7 @@ var oldText = document.querySelector(".para");
 var newText = document.createTextNode("New Text");
 oldText.innerHTML="";
 oldText.appendChild(newText);
-`
+```
 Just couple of code snippet. Nothing special :)
 
 
