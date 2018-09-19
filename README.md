@@ -131,6 +131,22 @@ xmlRequest.onload=function(){
 }
 xmlRequest.send();
 
+//LUB
+
+fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/master/text1.txt')
+  .then(response => response.text())
+  .then((data) => {
+      var slideLayer = document.querySelector(".slide-layer");
+      var sixthDiv = slideLayer.children[6];
+      sixthDiv.innerHTML = "";
+      sixthDiv.innerHTML = data;
+      sixthDiv.style.color="black";
+      sixthDiv.style.textAlign="center";
+      sixthDiv.style.fontSize="40px";
+      sixthDiv.style.lineHeigt="101px";
+  })
+
+
 ```
 Just couple of code snippet. Nothing special :)
 
