@@ -56,20 +56,15 @@ CSS:
 JS:
 
 ```JavaScript
-/* var mainWindowSlide = document.querySelector(".main-window-slide-container");
+var mainWindowSlide = document.querySelector(".main-window-slide-container");
 var slideDiv = mainWindowSlide.firstElementChild;
 
 slideDiv.style.backgroundImage = "url('http://bdfjade.com/data/out/102/6066356-wallpaper-image.jpeg')"
-
 slideDiv.style.backgroundSize = "cover";
+slideDiv.style.backgroundRepeat = "no-repeat";
 
-slideDiv.style.backgroundRepeat = "no-repeat"; */
-
-/* 
 document.querySelector(".slideobject-maskable").style.backgroundImage = "url('https://www.w3schools.com/w3css/img_lights.jpg')"
-
 document.querySelector(".slideobject-maskable").style.backgroundSize = "cover";
-
 document.querySelector(".slideobject-maskable").style.backgroundRepeat = "no-repeat"; */
 
 var slideLayer = document.querySelector(".slide-layer")
