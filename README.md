@@ -141,7 +141,7 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
       sixthDiv.style.lineHeigt="101px";
   })
 
-//Sprawdzenie ilości dzieci obiektu HTML:
+//Sprawdzenie ilości dzieci obiektu HTML w konsoli:
 console.log(document.querySelector(".slide-layer").children) //otrzymanie tablicy z elementami
 
 ```
