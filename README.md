@@ -141,6 +141,8 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
       sixthDiv.style.lineHeigt="101px";
   })
 
+//Sprawdzenie ilości dzieci obiektu HTML:
+console.log(document.querySelector(".slide-layer").children) //otrzymanie tablicy z elementami
 
 ```
 Just couple of code snippet. Nothing special :)
