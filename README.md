@@ -107,7 +107,7 @@ var thirtyifthDiv = slideLayer.children[35];
 var thirtySixthDiv = slideLayer.children[36];
 var thirtySeventhDiv = slideLayer.children[37];
 var thirtyEigthDiv = slideLayer.children[38];
-var thirtyNinthDiv= slideLayer.children[39];
+var thirtyNinthDiv = slideLayer.children[39];
 var fortiethDiv = slideLayer.children[40];
 var fortyFirstDiv = slideLayer.children[41];
 var fortySecondDiv = slideLayer.children[42];
@@ -117,7 +117,7 @@ var fortyFifthDiv = slideLayer.children[45];
 var fortySixthDiv = slideLayer.children[46];
 var fortySeventhDiv = slideLayer.children[47];
 var fortyEigthDiv = slideLayer.children[48];
-var fortyNinthDiv= slideLayer.children[49];
+var fortyNinthDiv = slideLayer.children[49];
 var fiftiethDiv = slideLayer.children[50];
 
 zeroDiv.style.background = "violet";
