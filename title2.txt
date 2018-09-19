@@ -1,1 +1,1 @@
-This is title 2 changed by JS
+Title 2
