@@ -1,8 +1,8 @@
-# Tools-and-useful-templates
-For my own usage
+# Tools-and-useful-templates &#9748 &#9748 &#9748
+For my own usage &#9749 #&9757 #&9981
 
 
-HTML:
+#&9929 HTML :
 
 ```HTML
 <!DOCTYPE html>
