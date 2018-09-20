@@ -1,8 +1,8 @@
-# Tools-and-useful-templates &#9748 &#9748 &#9748
-For my own usage &#9749 #&9757 #&9981
+# Tools-and-useful-templates :sos::fuelpump::coffee:
+For my own usage :shipit::computer:
 
 
-#&9929 HTML :
+:punch:HTML :
 
 ```HTML
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ For my own usage &#9749 #&9757 #&9981
 </body>
 </html>
 ```
-CSS:
+:muscle: CSS:
 
 ```CSS
 .main-window-slide-container{
@@ -59,7 +59,7 @@ CSS:
   align-items: center;
 }
 ```
-JS:
+:metal: JS:
 
 ```JavaScript
 
@@ -219,7 +219,7 @@ var newImg2 = document.createElement("IMG");
    
 
 ```
-Just couple of code snippet. Nothing special :)
+Just couple of code snippet. Nothing special :jack_o_lantern: :dart:
 
 
 
