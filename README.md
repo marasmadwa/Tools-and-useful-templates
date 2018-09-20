@@ -201,7 +201,7 @@ console.log(document.querySelector(".slide-layer").children) //otrzymanie tablic
 //Podmiana istniejącego zdjęcia:
 
 var imgDiv = document.querySelector(".imgDiv");
-imgDiv.style.position="relative";
+    imgDiv.style.position="relative";
 var newImg = document.createElement("IMG");
     newImg.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg");
     newImg.setAttribute("width", "304");
