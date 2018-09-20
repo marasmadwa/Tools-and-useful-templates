@@ -8,7 +8,7 @@ HTML:
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>MyCodeSnippet</title>
 </head>
 <body>
   <div class="main-window-slide-container">
@@ -23,8 +23,14 @@ HTML:
     <div>4</div>
     <div>5</div>
     <div>6</div>
+    <div>7</div>
   </div>
   <p class="para">Some text</p>
+
+<div class="slide-text"></div>
+<div class='imgDiv'></div>
+</body>
+</html>
 ```
 CSS:
 
@@ -56,6 +62,8 @@ CSS:
 JS:
 
 ```JavaScript
+
+//Wstawanie zdjęcia jako tło Div'a
 var mainWindowSlide = document.querySelector(".main-window-slide-container");
 var slideDiv = mainWindowSlide.firstElementChild;
 
@@ -67,6 +75,7 @@ document.querySelector(".slideobject-maskable").style.backgroundImage = "url('ht
 document.querySelector(".slideobject-maskable").style.backgroundSize = "cover";
 document.querySelector(".slideobject-maskable").style.backgroundRepeat = "no-repeat"; */
 
+//Nawigacja po drzewie DOM oraz pobranie dzieci elementu HTML
 var slideLayer = document.querySelector(".slide-layer")
 var zeroDiv = slideLayer.children[0];
 var firstDiv = slideLayer.children[1];
@@ -120,6 +129,7 @@ var fortyEigthDiv = slideLayer.children[48];
 var fortyNinthDiv = slideLayer.children[49];
 var fiftiethDiv = slideLayer.children[50];
 
+//Podstawowe stylowanie:
 zeroDiv.style.background = "violet";
 zeroDiv.style.width = "100px";
 zeroDiv.style.height="100px";
@@ -148,13 +158,13 @@ sixthDiv.style.background = "gray";
 sixthDiv.style.width = "100px";
 sixthDiv.style.height="100px";
 
-//wstawanie tekstu
+//wstawanie tekstu:
 var oldText = document.querySelector(".para");
 var newText = document.createTextNode("New Text");
 oldText.innerHTML="";
 oldText.appendChild(newText);
 
-//Umieszczanie zewnętrznego pliku tekstowego (lokalnie)
+//Umieszczanie zewnętrznego pliku tekstowego (lokalnie):
 
 var xmlRequest =new XMLHttpRequest();
 xmlRequest.open("GET","https://12Me21.github.io/test.txt");
@@ -170,7 +180,7 @@ xmlRequest.onload=function(){
 }
 xmlRequest.send();
 
-//LUB
+//LUB(!)
 
 fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/master/text1.txt')
   .then(response => response.text())
@@ -187,6 +197,26 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
 
 //Sprawdzenie ilości dzieci obiektu HTML w konsoli:
 console.log(document.querySelector(".slide-layer").children) //otrzymanie tablicy z elementami
+
+//Podmiana istniejącego zdjęcia:
+
+var imgDiv = document.querySelector(".imgDiv");
+imgDiv.style.position="relative";
+var newImg = document.createElement("IMG");
+    newImg.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg");
+    newImg.setAttribute("width", "304");
+    newImg.setAttribute("height", "228");
+    newImg.style.position="absolute";
+    newImg.style.display="none";
+    imgDiv.appendChild(newImg);
+
+var newImg2 = document.createElement("IMG");
+    newImg2.setAttribute("src", "https://i2.wp.com/www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg");
+    newImg2.setAttribute("width", "304");
+    newImg2.setAttribute("height", "228");
+    newImg2.style.position="absolute"; 
+    imgDiv.appendChild(newImg2);
+   
 
 ```
 Just couple of code snippet. Nothing special :)
