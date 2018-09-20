@@ -205,22 +205,25 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
   })
   ```
   
-  :wrench:Wstawianie własnego bulletPointa jako pseudo element:
+  :wrench:Wstawianie własnego bulletPointa:
   
   ```JavaScript
- fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/master/text2.txt')
+ var slideLayer = document.querySelector(".slide-layer");
+var seventhDiv = slideLayer.children[7];
+seventhDiv.innerHTML = "";
+var paragraph = document.createElement("P");
+var bulletPoint = document.createElement('SPAN'); 
+bulletPoint.innerHTML = '•';
+seventhDiv.appendChild(bulletPoint);
+seventhDiv.appendChild(paragraph);
+
+fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/master/text2.txt')
   .then(response => response.text())
   .then((data) => {
-      var slideLayer = document.querySelector(".slide-layer");
-      var seventhDiv = slideLayer.children[7];
-      var list = document.createElement("LI");
-      list.style.listStyle = "none";
-      list.innerHTML = data;
-      seventhDiv.appendChild(list);
-      var bulletPoint = document.createElement('span');
-      bulletPoint.style.color = "#30c1de";
+     paragraph.innerHTML = data;
+      bulletPoint.style.color = "#30c1de"; //correct slide color!
       bulletPoint.innerHTML = '•';
-      list.parentNode.insertBefore(bulletPoint, list);
+      var newText2 = bulletPoint.innerHTML + " " + paragraph.innerHTML;
       //seventhDiv.style.textAlign="center";
       seventhDiv.style.color="black";
       //seventhDiv.style.fontWeight="bold";
@@ -228,6 +231,7 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
       seventhDiv.style.display = "flex";
       seventhDiv.style.alignItems = "center";
       seventhDiv.style.flexDirection = "row";
+      seventhDiv.style.alignItems = "center";
       seventhDiv.style.fontSize="22px";
       //seventhDiv.style.paddingTop="25px";
   })
