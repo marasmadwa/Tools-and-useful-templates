@@ -63,7 +63,7 @@ For my own usage :shipit::computer:
 
 ```JavaScript
 
-//Wstawanie zdjęcia jako tło Div'a
+:wrench://Wstawanie zdjęcia jako tło Div'a
 var mainWindowSlide = document.querySelector(".main-window-slide-container");
 var slideDiv = mainWindowSlide.firstElementChild;
 
