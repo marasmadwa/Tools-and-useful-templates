@@ -62,6 +62,7 @@ For my own usage :shipit::computer:
 :metal: JS:
 
 :wrench:Wstawanie zdjęcia jako tło Div'a:
+
 ```JavaScript
 var mainWindowSlide = document.querySelector(".main-window-slide-container");
 var slideDiv = mainWindowSlide.firstElementChild;
@@ -74,7 +75,9 @@ document.querySelector(".slideobject-maskable").style.backgroundImage = "url('ht
 document.querySelector(".slideobject-maskable").style.backgroundSize = "cover";
 document.querySelector(".slideobject-maskable").style.backgroundRepeat = "no-repeat"; */
 ```
+
 :wrench:Nawigacja po drzewie DOM oraz pobranie dzieci elementu HTML:
+
 ```JavaScript
 var slideLayer = document.querySelector(".slide-layer")
 var zeroDiv = slideLayer.children[0];
@@ -129,7 +132,9 @@ var fortyEigthDiv = slideLayer.children[48];
 var fortyNinthDiv = slideLayer.children[49];
 var fiftiethDiv = slideLayer.children[50];
 ```
+
 :wrench:Podstawowe stylowanie:
+
 ```JavaScript
 zeroDiv.style.background = "violet";
 zeroDiv.style.width = "100px";
@@ -159,7 +164,9 @@ sixthDiv.style.background = "gray";
 sixthDiv.style.width = "100px";
 sixthDiv.style.height="100px";
 ```
+
 :wrench:Wstawanie tekstu:
+
 ```JavaScript
 var oldText = document.querySelector(".para");
 var newText = document.createTextNode("New Text");
@@ -197,11 +204,15 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
       sixthDiv.style.lineHeigt="101px";
   })
   ```
+  
 :wrench:Sprawdzenie ilości dzieci obiektu HTML w konsoli:
+
 ```JavaScript
 console.log(document.querySelector(".slide-layer").children) //otrzymanie tablicy z elementami
 ```
+
 :wrench:Podmiana istniejącego zdjęcia:
+
 ```JavaScript
 var imgDiv = document.querySelector(".imgDiv");
     imgDiv.style.position="relative";
@@ -220,6 +231,7 @@ var newImg2 = document.createElement("IMG");
     newImg2.style.position="absolute"; 
     imgDiv.appendChild(newImg2);
 ```
+
 Just couple of code snippet. Nothing special :jack_o_lantern: :dart:
 
 
