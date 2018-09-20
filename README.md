@@ -205,6 +205,34 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
   })
   ```
   
+  :wrench:Wstawianie własnego bulletPointa jako pseudo element:
+  
+  ```JavaScript
+ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/master/text2.txt')
+  .then(response => response.text())
+  .then((data) => {
+      var slideLayer = document.querySelector(".slide-layer");
+      var seventhDiv = slideLayer.children[7];
+      var list = document.createElement("LI");
+      list.style.listStyle = "none";
+      list.innerHTML = data;
+      seventhDiv.appendChild(list);
+      var bulletPoint = document.createElement('span');
+      bulletPoint.style.color = "#30c1de";
+      bulletPoint.innerHTML = '•';
+      list.parentNode.insertBefore(bulletPoint, list);
+      //seventhDiv.style.textAlign="center";
+      seventhDiv.style.color="black";
+      //seventhDiv.style.fontWeight="bold";
+      seventhDiv.style.fontFamily = "Trebuchet MS,Charcoal,sans-serif";
+      seventhDiv.style.display = "flex";
+      seventhDiv.style.alignItems = "center";
+      seventhDiv.style.flexDirection = "row";
+      seventhDiv.style.fontSize="22px";
+      //seventhDiv.style.paddingTop="25px";
+  })
+  ```
+  
 :wrench:Sprawdzenie ilości dzieci elementu HTML w konsoli:
 
 ```JavaScript
