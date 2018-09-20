@@ -205,7 +205,7 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
   })
   ```
   
-:wrench:Sprawdzenie ilości dzieci obiektu HTML w konsoli:
+:wrench:Sprawdzenie ilości dzieci elementu HTML w konsoli:
 
 ```JavaScript
 console.log(document.querySelector(".slide-layer").children) //otrzymanie tablicy z elementami
