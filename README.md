@@ -61,9 +61,8 @@ For my own usage :shipit::computer:
 ```
 :metal: JS:
 
+:wrench:Wstawanie zdjęcia jako tło Div'a:
 ```JavaScript
-
-:wrench://Wstawanie zdjęcia jako tło Div'a
 var mainWindowSlide = document.querySelector(".main-window-slide-container");
 var slideDiv = mainWindowSlide.firstElementChild;
 
@@ -74,8 +73,9 @@ slideDiv.style.backgroundRepeat = "no-repeat";
 document.querySelector(".slideobject-maskable").style.backgroundImage = "url('https://www.w3schools.com/w3css/img_lights.jpg')"
 document.querySelector(".slideobject-maskable").style.backgroundSize = "cover";
 document.querySelector(".slideobject-maskable").style.backgroundRepeat = "no-repeat"; */
-
-//Nawigacja po drzewie DOM oraz pobranie dzieci elementu HTML
+```
+:wrench:Nawigacja po drzewie DOM oraz pobranie dzieci elementu HTML:
+```JavaScript
 var slideLayer = document.querySelector(".slide-layer")
 var zeroDiv = slideLayer.children[0];
 var firstDiv = slideLayer.children[1];
@@ -128,8 +128,9 @@ var fortySeventhDiv = slideLayer.children[47];
 var fortyEigthDiv = slideLayer.children[48];
 var fortyNinthDiv = slideLayer.children[49];
 var fiftiethDiv = slideLayer.children[50];
-
-//Podstawowe stylowanie:
+```
+:wrench:Podstawowe stylowanie:
+```JavaScript
 zeroDiv.style.background = "violet";
 zeroDiv.style.width = "100px";
 zeroDiv.style.height="100px";
@@ -157,8 +158,9 @@ fifthDiv.style.height="100px";
 sixthDiv.style.background = "gray";
 sixthDiv.style.width = "100px";
 sixthDiv.style.height="100px";
-
-//wstawanie tekstu:
+```
+:wrench:Wstawanie tekstu:
+```JavaScript
 var oldText = document.querySelector(".para");
 var newText = document.createTextNode("New Text");
 oldText.innerHTML="";
@@ -194,12 +196,13 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
       sixthDiv.style.fontSize="40px";
       sixthDiv.style.lineHeigt="101px";
   })
-
-//Sprawdzenie ilości dzieci obiektu HTML w konsoli:
+  ```
+:wrench:Sprawdzenie ilości dzieci obiektu HTML w konsoli:
+```JavaScript
 console.log(document.querySelector(".slide-layer").children) //otrzymanie tablicy z elementami
-
-//Podmiana istniejącego zdjęcia:
-
+```
+:wrench:Podmiana istniejącego zdjęcia:
+```JavaScript
 var imgDiv = document.querySelector(".imgDiv");
     imgDiv.style.position="relative";
 var newImg = document.createElement("IMG");
@@ -216,8 +219,6 @@ var newImg2 = document.createElement("IMG");
     newImg2.setAttribute("height", "228");
     newImg2.style.position="absolute"; 
     imgDiv.appendChild(newImg2);
-   
-
 ```
 Just couple of code snippet. Nothing special :jack_o_lantern: :dart:
 
