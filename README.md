@@ -208,32 +208,32 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
   :wrench:Wstawianie własnego bulletPointa:
   
   ```JavaScript
- var slideLayer = document.querySelector(".slide-layer");
+var slideLayer = document.querySelector(".slide-layer");
 var seventhDiv = slideLayer.children[7];
-seventhDiv.innerHTML = "";
 var paragraph = document.createElement("P");
-var bulletPoint = document.createElement('SPAN'); 
+var bulletPoint = document.createElement('SPAN');
+seventhDiv.innerHTML = "";
 bulletPoint.innerHTML = '•';
+bulletPoint.style.color = "#30c1de"; //correct slide color!
 seventhDiv.appendChild(bulletPoint);
 seventhDiv.appendChild(paragraph);
+paragraph.style.marginLeft = "36px"; //space from storyline
+//seventhDiv.style.textAlign="center";
+seventhDiv.style.color = "#65727a"; //storyline font color
+//seventhDiv.style.fontWeight="bold";
+seventhDiv.style.fontFamily = "Trebuchet MS,Charcoal,sans-serif";
+seventhDiv.style.display = "flex";
+seventhDiv.style.alignItems = "center";
+seventhDiv.style.flexDirection = "row";
+seventhDiv.style.alignItems = "center";
+seventhDiv.style.fontSize = "29px";
+//seventhDiv.style.paddingTop="25px";
 
 fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/master/text2.txt')
   .then(response => response.text())
   .then((data) => {
-     paragraph.innerHTML = data;
-      bulletPoint.style.color = "#30c1de"; //correct slide color!
-      bulletPoint.innerHTML = '•';
-      var newText2 = bulletPoint.innerHTML + " " + paragraph.innerHTML;
-      //seventhDiv.style.textAlign="center";
-      seventhDiv.style.color="black";
-      //seventhDiv.style.fontWeight="bold";
-      seventhDiv.style.fontFamily = "Trebuchet MS,Charcoal,sans-serif";
-      seventhDiv.style.display = "flex";
-      seventhDiv.style.alignItems = "center";
-      seventhDiv.style.flexDirection = "row";
-      seventhDiv.style.alignItems = "center";
-      seventhDiv.style.fontSize="22px";
-      //seventhDiv.style.paddingTop="25px";
+    paragraph.innerHTML = data;
+    var newText = bulletPoint.innerHTML + paragraph.innerHTML;
   })
   ```
   
