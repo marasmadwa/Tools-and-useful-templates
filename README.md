@@ -270,7 +270,7 @@ var newImg2 = document.createElement("IMG");
 var script = document.createElement( 'script' );
 var body = document.querySelector("body");
 script.type = 'text/javascript';
-script.src = "C:\Users\MICHALKOWSKI\Desktop\test\bagage\js\bagage.js";
+script.src = "CODE_PATH.js";
 body.append( script );
 
 console.log(body);
