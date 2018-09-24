@@ -264,6 +264,18 @@ var newImg2 = document.createElement("IMG");
     imgDiv.appendChild(newImg2);
 ```
 
+:wrench:Podpięcie zewnętrznego skryptu:
+
+```JavaScript
+var script = document.createElement( 'script' );
+var body = document.querySelector("body");
+script.type = 'text/javascript';
+script.src = "C:\Users\MICHALKOWSKI\Desktop\test\bagage\js\bagage.js";
+body.append( script );
+
+console.log(body);
+```
+
 Just couple of code snippet. Nothing special :jack_o_lantern: :dart:
 
 
