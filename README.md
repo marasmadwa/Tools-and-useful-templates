@@ -272,7 +272,6 @@ var body = document.querySelector("body");
 script.type = 'text/javascript';
 script.src = "CODE_PATH.js";
 body.append( script );
-
 console.log(body);
 ```
 
