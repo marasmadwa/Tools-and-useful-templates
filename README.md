@@ -243,7 +243,7 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
 console.log(document.querySelector(".slide-layer").children) //otrzymanie tablicy z elementami
 ```
 
-:wrench: Wypisanie w konsoli wszytskich elementów <img>:
+:wrench: Wypisanie w konsoli wszytskich elementów img:
 
 ```JavaScript
 console.log(document.images);
