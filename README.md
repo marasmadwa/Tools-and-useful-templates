@@ -243,6 +243,25 @@ fetch('https://raw.githubusercontent.com/marasmadwa/Tools-and-useful-templates/m
 console.log(document.querySelector(".slide-layer").children) //otrzymanie tablicy z elementami
 ```
 
+:wrench: Wypisanie w konsoli wszytskich elementów <img>:
+
+```JavaScript
+console.log(document.images);
+
+//ex.1
+var Image = imgDiv.getElementsByTagName('img')[1].src = "https://cdn.pixabay.com/photo/2018/06/09/22/56/peacock-3465442_960_720.jpg";
+
+//ex.2
+var allImg = document.images;
+var secImg = allImg[1].src;
+console.log(secImg);
+secImg = "https://cdn.pixabay.com/photo/2018/06/09/22/56/peacock-3465442_960_720.jpg";
+imgDiv.children[1].src = secImg;
+
+//ex.3
+var newImg = eigthDiv.getElementsByTagName("IMG")[1].src = "img/placeholder.jpg";
+```
+
 :wrench:Podmiana istniejącego zdjęcia:
 
 ```JavaScript
