@@ -283,6 +283,26 @@ var newImg2 = document.createElement("IMG");
     imgDiv.appendChild(newImg2);
 ```
 
+:wrench:Dynamiczna podmiana zdjęcia z zewnętrznego skryptu:
+
+```JavaScript
+var imgUrl0= "imageurl";
+var imgUrl1= "imageurl";
+var imgUrl2= "imageurl";
+var imgUrl3= "imageurl";
+var imgUrl4= "imageurl";
+
+
+var allImages = document.querySelectorAll("image");
+var firstImg = allImages[2]; 																	 
+firstImg.setAttribute("xlink:href", imgUrl1);
+var secImg = allImages[3];
+secImg.setAttribute("xlink:href", imgUrl2);
+var thirdImg = allImages[4];
+thirdImg.setAttribute("xlink:href", imgUrl2);
+console.log(allImages) 
+```
+
 :wrench:Podpięcie zewnętrznego skryptu:
 
 ```JavaScript
